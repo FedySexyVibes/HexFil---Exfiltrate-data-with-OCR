@@ -1,4 +1,4 @@
-# HexExfil 📸 (Soon on Apple Store)
+# HexExfil 📸 ([Apple Store](https://apps.apple.com/us/app/hexfil/id6758780981))
 
 > **Visual Data Transfer via OCR**: Extract files from air-gapped systems using nothing but a camera.
 
