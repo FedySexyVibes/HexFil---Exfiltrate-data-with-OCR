@@ -1,0 +1,3 @@
+LPS=4; FILE="hex.py"; python3 -c 'import os,time,sys; f=sys.argv[1]; lps=float(sys.argv[2]); bpl=16; d=open(f,"rb").read(); delay=1.0/lps; off=0; 
+while off<len(d):
+ os.system("cls" if os.name=="nt" else "clear"); print("\n"*10); chunk=d[off:off+bpl]; hexpart=" ".join(f"{x:02X}" for x in chunk)+("   "*(bpl-len(chunk))); print(" "*20+f"{off:08X}: {hexpart}"); off+=bpl; time.sleep(delay)' "$FILE" "$LPS"
